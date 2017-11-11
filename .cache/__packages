@@ -1,0 +1,15 @@
+base
+zoo
+xts
+TTR
+quantmod
+plyr
+data.table
+dplyr
+ggplot2
+plotly
+tidyr
+bindrcpp
+shiny
+devtools
+slidify

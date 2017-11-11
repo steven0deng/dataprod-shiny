@@ -12,10 +12,7 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-source('../app/utils.R')
-```
+
 
 # Introduction
 
@@ -55,7 +52,8 @@ The functions for getting stock price data are defined in script file `utils.R`.
 
 The following script is used to do calculation and prepare the chart.
 
-```{r eval=FALSE, echo=TRUE}
+
+```r
 stocks <- getMultiQuotes(symbols, startDate=startDate, endDate=endDate)
 plot_ly(stocks, x = ~Date, y = ~Price, color = ~Stock, mode = "lines") %>%
   layout(title=paste("Stock Prices", format(min(stocks$Date), '%b %d, %Y'), "to",
@@ -72,17 +70,7 @@ Period: `2017-04-01` to `2017-07-31`
 *** {name: right}
 We have:
 
-```{r message=FALSE, echo=FALSE, warning=FALSE}
-symbols <- c('AMZN', 'GOOGL')
-startDate <- as.Date('2017-04-01')
-endDate <- as.Date('2017-07-31')
-library(plotly)
-stocks <- getMultiQuotes(symbols, startDate=startDate, endDate=endDate)
-p <- plot_ly(stocks, x = ~Date, y = ~Price, color = ~Stock, mode = "lines") %>%
-  layout(title=paste("Stock Prices", format(min(stocks$Date), '%b %d, %Y'), "to",
-                     format(max(stocks$Date), '%b %d, %Y')))
-htmlwidgets::saveWidget(as.widget(p), file = "demo.html")
-```
+
 <iframe src="demo.html" style="position:absolute;height:50%;width:50%"></iframe>
 
 
