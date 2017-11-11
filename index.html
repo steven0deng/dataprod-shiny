@@ -42,11 +42,29 @@
 
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
-  <hgroup>
-    <h1>Introduction</h1>
-  </hgroup>
   <article data-timings="">
-    <p>The objective of this project is to provide a simple way for users to view historical stock prices of selected symbols within certain period.</p>
+    <style>
+.title-slide {
+  background-color: #EDE0CF; /* #EDE0CF;  #CBE7A5; #CA9F9D*/
+}
+
+.title-slide hgroup > h1{
+ font-family: 'Oswald', 'Helvetica', sanserif; 
+}
+
+.title-slide hgroup > h1, 
+.title-slide hgroup > h2 {
+  color: RED;
+}
+slide h1 {
+  font-size: 200%;
+  color: BLUE;
+}
+</style>
+
+<h1>Introduction</h1>
+
+<p>The objective of this project is to provide a simple way for users to view historical stock prices of selected symbols within certain period.</p>
 
 <p>Basically, two pieces of input information are required:</p>
 
@@ -159,7 +177,7 @@ plot_ly(stocks, x = ~Date, y = ~Price, color = ~Stock, mode = &quot;lines&quot;)
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='Introduction'>
+        data-slide=1 title='NA'>
          1
       </a>
     </li>

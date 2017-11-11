@@ -6,15 +6,34 @@ author      :
 job         : 
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
-hitheme     : tomorrow      # 
+hitheme     : tomorrow      #
 widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
+<style>
+.title-slide {
+  background-color: #EDE0CF; /* #EDE0CF;  #CBE7A5; #CA9F9D*/
+}
+
+.title-slide hgroup > h1{
+ font-family: 'Oswald', 'Helvetica', sanserif; 
+}
+
+.title-slide hgroup > h1, 
+.title-slide hgroup > h2 {
+  color: RED;
+}
+slide h1 {
+  font-size: 200%;
+  color: BLUE;
+}
+</style>
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
-source('../app/utils.R')
+source('app/utils.R')
 ```
 
 # Introduction
