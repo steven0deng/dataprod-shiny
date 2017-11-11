@@ -76,4 +76,7 @@ plot_ly(stocks, x = ~Date, y = ~Price, color = ~Stock, mode = "lines") %>%
 
 The chart has a side bar layout. The sidebar panel contains the controls for setting the symbols and the period. The main panel contains the result which is a plotly interactive chart showing the stock prices.
 
+The app can accessed via:
+
+http://steven0deng.shinyapps.io/a_simple_stock_view
 

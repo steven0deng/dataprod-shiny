@@ -1,3 +1,4 @@
+library(plotly)
 library(shiny)
 
 startDate <- as.Date('2017-01-01')
