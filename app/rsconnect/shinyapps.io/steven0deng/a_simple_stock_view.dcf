@@ -5,8 +5,8 @@ account: steven0deng
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 234266
-bundleId: 1069926
+bundleId: 1069930
 url: https://steven0deng.shinyapps.io/a_simple_stock_view/
-when: 1510375965.71059
+when: 1510376416.39728
 asMultiple: FALSE
 asStatic: FALSE
