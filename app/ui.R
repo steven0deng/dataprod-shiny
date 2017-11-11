@@ -32,7 +32,11 @@ shinyUI(fluidPage(
   br(),
   tags$footer(
     p("Source Code:"),
-    a("https://github.com/steven0deng/dataprod-shiny/tree/master/app", href="https://github.com/steven0deng/dataprod-shiny/tree/master/app"),
+    a("https://github.com/steven0deng/dataprod-shiny/tree/master/app",
+      href="https://github.com/steven0deng/dataprod-shiny/tree/master/app",
+      target="_blank"),
     p("Pitch Slides:"),
-    a("https://steven0deng.github.io/dataprod-shiny", href="https://steven0deng.github.io/dataprod-shiny"))
+    a("https://steven0deng.github.io/dataprod-shiny",
+      href="https://steven0deng.github.io/dataprod-shiny",
+      target="_blank"))
 ))
